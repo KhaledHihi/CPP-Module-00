@@ -1,4 +1,5 @@
 #include "PhoneBook.hpp"
+
 std::string ten_char(std::string str)
 {
     if (str.length() >= 10)
@@ -55,6 +56,7 @@ int allnumber(std::string data)
     }
     return (0);
 }
+
 
 void PhoneBook::add()
 {

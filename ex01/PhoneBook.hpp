@@ -39,8 +39,10 @@ class PhoneBook
 {
 	private:
 		Contact con[8];
-	public:
+	public: 
 		int n;
 		void search();
 		void add();
 };
+
+
