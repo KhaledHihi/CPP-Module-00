@@ -1,5 +1,5 @@
 program = account
-CFLAGE = -Wall -Wextra -Werror -std=c++98
+FLAGE = -Wall -Wextra -Werror -std=c++98
 comp = c++
 
 sur = Account.cpp tests.cpp
@@ -9,10 +9,10 @@ obj =$(sur:.cpp=.o)
 all: $(program)
 
 $(program): $(obj)
-	$(comp) $(CFLAGE) $(obj) -o $(program)
+	$(comp) $(FLAGE) $(obj) -o $(program)
 
 %.o : %.cpp
-	$(comp) $(CFLAGE) -c $< -o $@
+	$(comp) $(FLAGE) -c $< -o $@
 
 clean:
 	rm -rf $(obj)

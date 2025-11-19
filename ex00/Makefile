@@ -1,7 +1,7 @@
-NAME = PhoneBook
+NAME = megaphone
 CC = c++
 FLAGS = -Wall -Wextra -Werror -std=c++98
-SRCS = PhoneBook.cpp main.cpp
+SRCS = megaphone.cpp
 OBJS = $(SRCS:.cpp=.o)
 RM = rm -f
 

@@ -5,6 +5,7 @@ int main(int ac, char **av)
 	std::string input;
 	PhoneBook a;
 
+	(void)av;
 	a.n = 0;
 	if (ac != 1)
 	{
