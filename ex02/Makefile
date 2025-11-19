@@ -21,3 +21,5 @@ fclean:	clean
 	rm -rf $(program)
 
 re: fclean all
+
+.SECONDARY: $(obj)

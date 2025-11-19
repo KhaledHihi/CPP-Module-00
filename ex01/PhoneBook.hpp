@@ -5,14 +5,12 @@
 
 class Contact {
 	private:
-	// Add private member variables and methods here
 	 	std::string firstName;
         std::string lastName;
         std::string nickName;
         std::string phoneNumber;
 		std::string darkestSecret;
 	public:
-	// Add public member functions here
 		void get_all(void)
 		{
 			std::cout << "firstName : " << firstName << '\n';
@@ -21,17 +19,17 @@ class Contact {
 			std::cout << "phoneNumber : " << phoneNumber << '\n';
 			std::cout << "darkestSecret : " << darkestSecret << '\n';
 		}
-		void setFirstName(std::string value) {firstName = value;}
-        void setLastName(std::string value) {lastName = value;}
-        void setNickName(std::string value) {nickName = value;}
-        void setPhoneNumber(std::string value) {phoneNumber = value;}
-		void setDarkestSecret(std::string value){darkestSecret = value;}
-		
-		std::string getFirstName(){return (firstName);}
-		std::string getLastName() {return (lastName);}
-		std::string getNickName(){return (nickName);}
-		std::string getPhoneNumber() {return (phoneNumber);}
-		std::string getDarkestSecret() {return (darkestSecret);}
+		void setFirstName(std::string value);
+        void setLastName(std::string value);
+        void setNickName(std::string value);
+        void setPhoneNumber(std::string value);
+		void setDarkestSecret(std::string value);
+
+		std::string getFirstName();
+		std::string getLastName();
+		std::string getNickName();
+		std::string getPhoneNumber();
+		std::string getDarkestSecret();
 
 };
 
@@ -39,7 +37,7 @@ class PhoneBook
 {
 	private:
 		Contact con[8];
-	public: 
+	public:
 		int n;
 		void search();
 		void add();

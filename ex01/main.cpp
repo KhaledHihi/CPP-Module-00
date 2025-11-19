@@ -18,11 +18,11 @@ int main(int ac, char **av)
 
 		if (std::cin.eof())
 			break;
-		if (input == "ADD" || input == "add")
+		if (input == "ADD")
 			a.add();
-		else if (input == "SEARCH" || input == "search")
+		else if (input == "SEARCH")
 			a.search();
-		else if (input == "EXIT" || input == "exit")
+		else if (input == "EXIT")
 			break ;
 		else
 		{
